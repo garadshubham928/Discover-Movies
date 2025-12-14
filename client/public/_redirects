@@ -1,0 +1,6 @@
+# Proxy API requests to the backend
+/api/*  https://discover-movies-production.up.railway.app/api/:splat  200
+/uploads/*  https://discover-movies-production.up.railway.app/uploads/:splat  200
+
+# Handle React Router (SPA) - Redirect all other requests to index.html
+/*  /index.html  200
